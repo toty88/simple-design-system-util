@@ -30,7 +30,8 @@
     "lint-staged": "lint-staged",
     "mtest": "stryker run",
     "dev": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "plop": "plop"
   },
   "dependencies": {
     "react": "18.2.0",
@@ -65,6 +66,7 @@
     "eslint-plugin-storybook": "0.8.0",
     "husky": "9.0.11",
     "jsdom": "24.0.0",
+    "plop": "4.0.1",
     "prettier": "3.2.5",
     "storybook": "8.0.9",
     "typescript": "5.2.2",

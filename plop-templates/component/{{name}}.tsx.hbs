@@ -1,0 +1,9 @@
+import React from 'react'
+import * as Styled from './{{name}}.styled'
+import type { Props } from './{{name}}.props'
+
+export const {{name}}: React.FC<Props> = ({ ...props }) => {
+  return (
+    <Styled.{{name}} {...props}></Styled.{{name}}>
+  )
+}

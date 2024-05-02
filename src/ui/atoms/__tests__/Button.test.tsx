@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-unsafe-call */
 import { fireEvent } from '@storybook/test'
 import { Button } from '@/ui/atoms/Button/Button'
-import { BackgoundColor } from '../Button.styled'
+import { BackgoundColor } from '../Button/Button.styled'
 import { Props } from '@/ui/atoms/Button/Button.props'
 import { render, screen } from '@testing-library/react'
 import { beforeEach, describe, expect, it, vi } from 'vitest'
@@ -12,7 +12,7 @@ describe('Button', () => {
     defaultProps = {
       label: 'Hello World',
       onClick: vi.fn(),
-      textColor: 'white'
+      textcolor: 'white'
     }
   })
 

@@ -6,6 +6,6 @@ export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
   label: string
   variant?: Variant
   onClick: () => void
-  textColor: CSSProperties['color']
+  textcolor: CSSProperties['color']
   onHoverBgColor?: React.CSSProperties['color']
 }

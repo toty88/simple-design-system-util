@@ -39,8 +39,9 @@ export const Secondary: Story = {
 export const Error: Story = {
   args: {
     label: 'Error',
-    textColor: 'yellow',
+    textcolor: 'yellow',
     variant: 'error',
-    onHoverBgColor: '#c76f78'
+    onHoverBgColor: '#c76f78',
+    onMouseEnter: fn(() => console.log('errorrrrrrrrrrr'))
   }
 }

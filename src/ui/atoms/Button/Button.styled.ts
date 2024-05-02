@@ -3,11 +3,11 @@ import styled, { css } from 'styled-components'
 import type { Variant } from './Button.props'
 
 interface LabelProps {
-  textColor: React.CSSProperties['color']
+  textcolor: React.CSSProperties['color']
 }
 export const Label = styled.span<LabelProps>`
   font-weight: bold;
-  color: ${(props) => props.textColor ?? 'white'};
+  color: ${(props) => props.textcolor ?? 'white'};
 `
 
 interface ButtonProps {
@@ -23,17 +23,19 @@ export const BackgoundColor = {
 }
 
 export const Button = styled.button<ButtonProps>`
-  dispaly: inline-block;
-  text-align: center;
-  font-weight: 400;
-  width: 8rem;
-  border: 1px solid transparent;
-  border-radius: 3rem;
-  font-size: 1rem;
+  width: 7rem;
   padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 5rem;
+  dispaly: inline-block;
+  border: 1px solid transparent;
+
   &:hover {
     cursor: pointer;
   }
+
   ${(props) => css`
     background-color: ${props.variant ? BackgoundColor[props.variant] : BackgoundColor['primary']};
     &:hover {
