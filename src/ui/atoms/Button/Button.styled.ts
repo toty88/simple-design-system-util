@@ -2,14 +2,6 @@
 import styled, { css } from 'styled-components'
 import type { Variant } from './Button.props'
 
-interface LabelProps {
-  textcolor: React.CSSProperties['color']
-}
-export const Label = styled.span<LabelProps>`
-  font-weight: bold;
-  color: ${(props) => props.textcolor ?? 'white'};
-`
-
 interface ButtonProps {
   variant?: Variant
   onHoverBgColor?: React.CSSProperties['color']

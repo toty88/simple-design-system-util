@@ -27,8 +27,9 @@ export default tseslint.config(
   {
     ignores: [
       "**/dist/**",
-      "**/../.storybook/*.ts",
+      "**/.storybook/*.ts",
       "**/.vscode/**",
+      "**/hooks/*.ts",
       "**/coverage/**",
       "**/.husky/**",
       "**/*.json/**",

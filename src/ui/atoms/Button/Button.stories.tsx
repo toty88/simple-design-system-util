@@ -1,4 +1,4 @@
-import { Button } from './Button.tsx'
+import { Button, Label } from '@/ui/atoms'
 import { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
 
@@ -24,24 +24,31 @@ type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    label: 'Primary',
-    onClick: fn(() => console.log('hola mundo'))
+    onClick: fn(() => console.log('hola mundo')),
+    children: [<Label text="Primary" fontsize={'1rem'} />]
   }
 }
 
 export const Secondary: Story = {
   args: {
-    label: 'Secondary',
-    variant: 'secondary'
+    variant: 'secondary',
+    onHoverBgColor: '#a9aba6',
+    children: [<Label text="Secondary" fontsize={'1rem'} />]
+  }
+}
+
+export const Success: Story = {
+  args: {
+    variant: 'success',
+    onHoverBgColor: '#aadc35',
+    children: [<Label text="Success" fontsize={'1rem'} />]
   }
 }
 
 export const Error: Story = {
   args: {
-    label: 'Error',
-    textcolor: 'yellow',
     variant: 'error',
     onHoverBgColor: '#c76f78',
-    onMouseEnter: fn(() => console.log('errorrrrrrrrrrr'))
+    children: [<Label text="Error" textcolor={'yellow'} fontsize={'1rem'} />]
   }
 }

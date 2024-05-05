@@ -1,16 +1,14 @@
-import { Stepper } from './Stepper.tsx'
+import { Label } from './Label.tsx'
 import { Meta, StoryObj } from '@storybook/react'
 
-const meta: Meta<typeof Stepper> = {
-  title: 'Molecules/Stepper',
-  component: Stepper,
+const meta: Meta<typeof Label> = {
+  title: 'Atoms/Label',
+  component: Label,
   parameters: {
     layout: 'centered'
   },
   tags: ['autodocs'],
-  argTypes: {
-    onStepper: { action: 'onStepper' }
-  }
+  argTypes: {}
 }
 
 export default meta
@@ -19,6 +17,7 @@ type Story = StoryObj<typeof meta>
 
 export const Test: Story = {
   args: {
-    min: 1
+    textcolor: '#bb88cc',
+    text: 'Hello World'
   }
 }

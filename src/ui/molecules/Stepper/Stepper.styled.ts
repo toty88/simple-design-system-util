@@ -13,8 +13,10 @@ export const StepperContainer = styled.div`
   height: 2rem;
   border: 1px solid;
   display: flex;
-  justify-content: space-around;
   align-items: center;
+  border-color: #7bff;
+  border-radius: 10rem;
+  justify-content: space-around;
 `
 export const StepperButton = styled(Button)<StepperButton>`
   ${(props) => css`
