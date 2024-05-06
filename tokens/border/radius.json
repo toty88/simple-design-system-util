@@ -1,0 +1,19 @@
+{
+  "border": {
+    "radius": {
+      "xm": {
+        "value": "1rem"
+      },
+      "sm": {
+        "value": "2rem"
+      },
+      "md": {
+        "value": "4rem"
+      },
+      "ml": {
+        "value": "8rem"
+      },
+      "lg": { "value": "16rem" }
+    }
+  }
+}

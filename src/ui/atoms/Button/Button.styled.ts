@@ -1,43 +1,34 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import styled, { css } from 'styled-components'
-import type { Variant } from './Button.props'
-
-interface LabelProps {
-  textColor: React.CSSProperties['color']
-}
-export const Label = styled.span<LabelProps>`
-  font-weight: bold;
-  color: ${(props) => props.textColor ?? 'white'};
-`
+import { getColorSet } from '@/style-dictionary/util'
+import type { ColorVariant } from '@/style-dictionary/util'
 
 interface ButtonProps {
-  variant?: Variant
-  onHoverBgColor?: React.CSSProperties['color']
-}
-
-export const BackgoundColor = {
-  primary: '#007bff',
-  secondary: '#6c757d',
-  success: '#28a745',
-  error: '#dc3545'
+  variant: ColorVariant
 }
 
 export const Button = styled.button<ButtonProps>`
-  dispaly: inline-block;
-  text-align: center;
-  font-weight: 400;
-  width: 8rem;
-  border: 1px solid transparent;
-  border-radius: 3rem;
-  font-size: 1rem;
+  width: 7rem;
   padding: 1rem;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 5rem;
+  dispaly: inline-block;
+
   &:hover {
     cursor: pointer;
   }
+
   ${(props) => css`
-    background-color: ${props.variant ? BackgoundColor[props.variant] : BackgoundColor['primary']};
+    background-color: ${getColorSet(props.variant).backgroundColor};
+    border: ${getColorSet(props.variant).borderColor};
     &:hover {
-      background: ${props.onHoverBgColor ?? '#7bff'};
+      background: ${getColorSet(props.variant).disabledColor};
+    }
+    &:disabled {
+      background-color: ${getColorSet(props.variant).disabledColor};
+      cursor: not-allowed;
     }
   `};
 `

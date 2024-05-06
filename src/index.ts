@@ -1,1 +1,2 @@
-export * from '@/ui/index'
+export * from '@/ui/atoms'
+export * from '@/ui/molecules'

@@ -1,5 +1,3 @@
-// @ts-check
-
 import eslint from "@eslint/js";
 import tseslint from "typescript-eslint";
 import stylistic from '@stylistic/eslint-plugin'
@@ -25,21 +23,23 @@ export default tseslint.config(
       },
     },
   },
+  
   {
     ignores: [
       "**/dist/**",
-      "**/*.config.js",
-      "**/*.config.ts",
+      "**/.storybook/*.ts",
       "**/.vscode/**",
+      "**/hooks/*.ts",
       "**/coverage/**",
       "**/.husky/**",
-      "**/.storybook/*.ts",
       "**/*.json/**",
+      "**/tests/*",
+      "*.config.*",
       ".gitignore",
       ".prettireignore",
-      "commitlint.config.ts",
-      "**/tests/*",
-    ],
+      "plopfile.js",
+      "*.ts"
+    ]
   },
   {
     rules: {

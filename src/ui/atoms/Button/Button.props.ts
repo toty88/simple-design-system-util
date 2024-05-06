@@ -1,11 +1,8 @@
 import * as React from 'react'
-import { CSSProperties } from 'styled-components'
-export type Variant = 'primary' | 'secondary' | 'success' | 'error'
-
+import type { ColorVariant } from '@/style-dictionary/util'
 export interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
-  label: string
-  variant?: Variant
+  disabled?: boolean
   onClick: () => void
-  textColor: CSSProperties['color']
-  onHoverBgColor?: React.CSSProperties['color']
+  variant: ColorVariant
+  children: React.ReactNode
 }

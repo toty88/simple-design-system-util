@@ -1,4 +1,4 @@
-import { Button } from './Button.tsx'
+import { Button, Label } from '@/ui/atoms'
 import { Meta, StoryObj } from '@storybook/react'
 import { fn } from '@storybook/test'
 
@@ -11,10 +11,9 @@ const meta: Meta<typeof Button> = {
   tags: ['autodocs'],
   argTypes: {
     variant: {
-      options: ['primary', 'secondary', 'success', 'error'],
+      options: ['primary', 'success', 'warn', 'error'],
       description: 'Visual style of the Button'
     }
-    // onClick: { action: console.log('button clicked') }
   }
 }
 
@@ -24,23 +23,29 @@ type Story = StoryObj<typeof meta>
 
 export const Primary: Story = {
   args: {
-    label: 'Primary',
-    onClick: fn(() => console.log('hola mundo'))
+    onClick: fn(() => console.log('hola mundo')),
+    variant: 'primary',
+    children: [<Label text="Primary" fontsize={'1rem'} />]
   }
 }
 
-export const Secondary: Story = {
+export const Success: Story = {
   args: {
-    label: 'Secondary',
-    variant: 'secondary'
+    variant: 'success',
+    children: [<Label text="Success" fontsize={'1rem'} />]
+  }
+}
+
+export const Warn: Story = {
+  args: {
+    variant: 'warn',
+    children: [<Label text="Warn" fontsize={'1rem'} />]
   }
 }
 
 export const Error: Story = {
   args: {
-    label: 'Error',
-    textColor: 'yellow',
     variant: 'error',
-    onHoverBgColor: '#c76f78'
+    children: [<Label text="Error" fontsize={'1rem'} />]
   }
 }
