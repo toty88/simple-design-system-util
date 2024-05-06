@@ -31,7 +31,9 @@
     "mtest": "stryker run",
     "dev": "storybook dev -p 6006",
     "build-storybook": "storybook build",
-    "plop": "plop"
+    "plop": "plop",
+    "sbuild": "style-dictionary build"
+
   },
   "dependencies": {
     "react": "18.2.0",
@@ -70,6 +72,7 @@
     "plop": "4.0.1",
     "prettier": "3.2.5",
     "storybook": "8.0.9",
+    "style-dictionary": "^3.9.2",
     "typescript": "5.2.2",
     "typescript-eslint": "7.8.0",
     "vite": "5.2.0",

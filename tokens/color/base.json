@@ -1,0 +1,29 @@
+{
+  "color": {
+    "base": {
+      "disabled": { "value": "#dcdcdc" },
+      "bkg": { "value": "#c0c0c0" },
+      "border": { "value": "#808080" }
+    },
+    "primary": {
+      "disabled": { "value": "#9ebaf5" },
+      "bkg": { "value": "#435898" },
+      "border": { "value": "#1d2e68" }
+    },
+    "success": {
+      "disabled": { "value": "#92e5a1" },
+      "bkg": { "value": "#22b455" },
+      "border": { "value": "#020204" }
+    },
+    "warn": {
+      "disabled": { "value": "#ffcf4d" },
+      "bkg": { "value": "#c99a1c" },
+      "border": { "value": "#896501" }
+    },
+    "danger": {
+      "disabled": { "value": "#ef819f" },
+      "bgk": { "value": "#e94f79" },
+      "border": { "value": "#e21c52" }
+    }
+  }
+}

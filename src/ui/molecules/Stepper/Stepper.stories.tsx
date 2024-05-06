@@ -19,6 +19,7 @@ type Story = StoryObj<typeof meta>
 
 export const Test: Story = {
   args: {
-    min: 1
+    min: 1,
+    variant: 'warn'
   }
 }

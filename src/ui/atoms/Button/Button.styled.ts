@@ -1,17 +1,10 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import styled, { css } from 'styled-components'
-import type { Variant } from './Button.props'
+import { getColorSet } from '@/style-dictionary/util'
+import type { ColorVariant } from '@/style-dictionary/util'
 
 interface ButtonProps {
-  variant?: Variant
-  onHoverBgColor?: React.CSSProperties['color']
-}
-
-export const BackgoundColor = {
-  primary: '#007bff',
-  secondary: '#6c757d',
-  success: '#28a745',
-  error: '#dc3545'
+  variant: ColorVariant
 }
 
 export const Button = styled.button<ButtonProps>`
@@ -22,16 +15,20 @@ export const Button = styled.button<ButtonProps>`
   text-align: center;
   border-radius: 5rem;
   dispaly: inline-block;
-  border: 1px solid transparent;
 
   &:hover {
     cursor: pointer;
   }
 
   ${(props) => css`
-    background-color: ${props.variant ? BackgoundColor[props.variant] : BackgoundColor['primary']};
+    background-color: ${getColorSet(props.variant).backgroundColor};
+    border: ${getColorSet(props.variant).borderColor};
     &:hover {
-      background: ${props.onHoverBgColor ?? '#7bff'};
+      background: ${getColorSet(props.variant).disabledColor};
+    }
+    &:disabled {
+      background-color: ${getColorSet(props.variant).disabledColor};
+      cursor: not-allowed;
     }
   `};
 `

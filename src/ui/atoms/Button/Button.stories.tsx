@@ -11,10 +11,9 @@ const meta: Meta<typeof Button> = {
   tags: ['autodocs'],
   argTypes: {
     variant: {
-      options: ['primary', 'secondary', 'success', 'error'],
+      options: ['primary', 'success', 'warn', 'error'],
       description: 'Visual style of the Button'
     }
-    // onClick: { action: console.log('button clicked') }
   }
 }
 
@@ -25,30 +24,28 @@ type Story = StoryObj<typeof meta>
 export const Primary: Story = {
   args: {
     onClick: fn(() => console.log('hola mundo')),
+    variant: 'primary',
     children: [<Label text="Primary" fontsize={'1rem'} />]
-  }
-}
-
-export const Secondary: Story = {
-  args: {
-    variant: 'secondary',
-    onHoverBgColor: '#a9aba6',
-    children: [<Label text="Secondary" fontsize={'1rem'} />]
   }
 }
 
 export const Success: Story = {
   args: {
     variant: 'success',
-    onHoverBgColor: '#aadc35',
     children: [<Label text="Success" fontsize={'1rem'} />]
+  }
+}
+
+export const Warn: Story = {
+  args: {
+    variant: 'warn',
+    children: [<Label text="Warn" fontsize={'1rem'} />]
   }
 }
 
 export const Error: Story = {
   args: {
     variant: 'error',
-    onHoverBgColor: '#c76f78',
-    children: [<Label text="Error" textcolor={'yellow'} fontsize={'1rem'} />]
+    children: [<Label text="Error" fontsize={'1rem'} />]
   }
 }
