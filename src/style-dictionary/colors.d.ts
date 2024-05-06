@@ -1,9 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Sun, 05 May 2024 21:27:29 GMT
+ * Generated on Mon, 06 May 2024 18:41:10 GMT
  */
 
-export const BorderRadiusXm : string;
+export const BorderRadiusXxs : string;
+export const BorderRadiusXs : string;
 export const BorderRadiusSm : string;
 export const BorderRadiusMd : string;
 export const BorderRadiusMl : string;
@@ -23,6 +24,10 @@ export const ColorWarnBorder : string;
 export const ColorDangerDisabled : string;
 export const ColorDangerBgk : string;
 export const ColorDangerBorder : string;
+export const ColorChatDisabled : string;
+export const ColorChatBgk : string;
+export const ColorChatText : string;
+export const ColorChatBorder : string;
 export const ColorFontPrimary : string;
 export const ColorFontSuccess10 : string;
 export const ColorFontSuccess20 : string;

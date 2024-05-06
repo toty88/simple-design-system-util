@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/explicit-function-return-type */
 import styled, { css } from 'styled-components'
 import { getColorSet } from '@/style-dictionary/util'
-import type { ColorVariant } from '@/style-dictionary/util'
+import type { ColorVariant } from '@/types/index'
 
 interface ButtonProps {
   variant: ColorVariant

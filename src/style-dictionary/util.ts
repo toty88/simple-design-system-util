@@ -8,7 +8,8 @@ export const BackgroundColor: Record<ColorVariant, string> = {
   primary: tokens.ColorPrimaryBkg,
   success: tokens.ColorSuccessBkg,
   warn: tokens.ColorWarnBkg,
-  error: tokens.ColorDangerBgk
+  error: tokens.ColorDangerBgk,
+  chat: tokens.ColorChatBgk
 }
 
 // BorderColor
@@ -17,7 +18,8 @@ export const BorderColor: Record<ColorVariant, string> = {
   primary: tokens.ColorPrimaryBorder,
   success: tokens.ColorSuccessBorder,
   warn: tokens.ColorWarnBorder,
-  error: tokens.ColorDangerBorder
+  error: tokens.ColorDangerBorder,
+  chat: tokens.ColorChatBorder
 }
 
 // Hover && Disabled
@@ -26,13 +28,15 @@ export const DisabledColor: Record<ColorVariant, string> = {
   primary: tokens.ColorPrimaryDisabled,
   success: tokens.ColorSuccessDisabled,
   warn: tokens.ColorWarnDisabled,
-  error: tokens.ColorDangerDisabled
+  error: tokens.ColorDangerDisabled,
+  chat: tokens.ColorChatDisabled
 }
 
 // 'xs' | 'sm' | 'md' | 'ml' | 'lg'
 
 export const BorderSize: Record<BorderVariant, string> = {
-  xs: tokens.BorderRadiusXm,
+  xxs: tokens.BorderRadiusXxs,
+  xs: tokens.BorderRadiusXs,
   sm: tokens.BorderRadiusSm,
   md: tokens.BorderRadiusMd,
   ml: tokens.BorderRadiusMl,
@@ -42,14 +46,16 @@ export const BorderSize: Record<BorderVariant, string> = {
 type ColorPaleteType = {
   backgroundColor: string
   borderColor: string
-  disabledColor?: string
+  disabledColor: string
+  textColor: string
 }
 
 export function getColorSet(variant: ColorVariant): ColorPaleteType {
   return {
     backgroundColor: BackgroundColor[variant],
     borderColor: BorderColor[variant],
-    disabledColor: DisabledColor[variant]
+    disabledColor: DisabledColor[variant],
+    textColor: tokens.ColorChatText
   }
 }
 
