@@ -1,7 +1,11 @@
 {
   "border": {
     "radius": {
-      "xm": {
+      "xxs": {
+        "value": ".5rem"
+      },
+
+      "xs": {
         "value": "1rem"
       },
       "sm": {

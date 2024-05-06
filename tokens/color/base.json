@@ -24,6 +24,12 @@
       "disabled": { "value": "#ef819f" },
       "bgk": { "value": "#e94f79" },
       "border": { "value": "#e21c52" }
+    },
+    "chat": {
+      "disabled": { "value": "#dcdcdc" },
+      "bgk": { "value": "#202c33" },
+      "text": { "value": "#8696a0" },
+      "border": { "value": "#202c33" }
     }
   }
 }

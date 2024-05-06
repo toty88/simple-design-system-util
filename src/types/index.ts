@@ -1,2 +1,2 @@
-export type ColorVariant = 'base' | 'primary' | 'success' | 'error' | 'warn'
-export type BorderVariant = 'xs' | 'sm' | 'md' | 'ml' | 'lg'
+export type ColorVariant = 'base' | 'primary' | 'success' | 'error' | 'warn' | 'chat'
+export type BorderVariant = 'xxs' | 'xs' | 'sm' | 'md' | 'ml' | 'lg'

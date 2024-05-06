@@ -1,9 +1,10 @@
 /**
  * Do not edit directly
- * Generated on Sun, 05 May 2024 21:27:29 GMT
+ * Generated on Mon, 06 May 2024 18:41:10 GMT
  */
 
-export const BorderRadiusXm = "1rem";
+export const BorderRadiusXxs = ".5rem";
+export const BorderRadiusXs = "1rem";
 export const BorderRadiusSm = "2rem";
 export const BorderRadiusMd = "4rem";
 export const BorderRadiusMl = "8rem";
@@ -23,6 +24,10 @@ export const ColorWarnBorder = "#896501";
 export const ColorDangerDisabled = "#ef819f";
 export const ColorDangerBgk = "#e94f79";
 export const ColorDangerBorder = "#e21c52";
+export const ColorChatDisabled = "#dcdcdc";
+export const ColorChatBgk = "#202c33";
+export const ColorChatText = "#8696a0";
+export const ColorChatBorder = "#202c33";
 export const ColorFontPrimary = "#ffffff";
 export const ColorFontSuccess10 = "#ffffff";
 export const ColorFontSuccess20 = "#ffffff";

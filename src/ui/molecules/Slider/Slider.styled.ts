@@ -68,6 +68,9 @@ export const SliderButton = styled(Button)<ButtonProps>`
   border-radius: 50%;
 
   ${(props) => css`
+    &:hover {
+      background-color: ${getColorSet(props.variant).borderColor};
+    }
     background-color: ${props.active
       ? getColorSet(props.variant).borderColor
       : getColorSet(props.variant).disabledColor};
